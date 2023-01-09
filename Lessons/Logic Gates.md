@@ -78,6 +78,6 @@ Example: "not going to the beach" is the inversion of "going to the beach". They
 This lesson is over, however here is a list of topics recommended learning next:
 
 - [Binary addition](Binary Addition#binary-addition)
-- [Boolean Algebra](Boolean Algebra#boolean-algebra)
+- [Boolean Algebra](Boolean Algebra_old#boolean-algebra)
 - [Decoders](Decoders#decoders)
 - [Latches](Latches#latches)
