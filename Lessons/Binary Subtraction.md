@@ -1,12 +1,12 @@
-# Binary Addition
+# Binary Subtraction
 
 ---
 
 ## Prerequisites
 
-- [Binary](binary#binary)
-- [Binary Addition](Binary Addition#binary-addition)
-- [Binary Negation](Binary Negation#binary-negation)
+- [Binary](Binary.md#binary)
+- [Binary Addition](Binary%20Addition.md#binary-addition)
+- [Binary Negation](Binary%20Negation.md#binary-negation)
 
 ---
 
@@ -23,5 +23,5 @@ Topics to be covered in this lesson:
 
 This lesson is over, however here is a list of topics recommended learning next:
 
-- [Subtractors](Subtractors#subtractors)
+- [Subtractors](Subtractors.md#subtractors)
 
