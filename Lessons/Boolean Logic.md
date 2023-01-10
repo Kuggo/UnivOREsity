@@ -10,20 +10,26 @@
 
 ## Contents
 
+This Lesson is split into 3 sections (to avoid a lot of redundancy), each one with its own sub topics.  
 Topics to be covered in this lesson:
 
 - Boolean Algebra
-    - Basic Definitions
-    - Boolean Expressions
-    - Boolean Laws
+    - [Basic Definitions](Boolean Logic#basic-definitions)
+    - [Boolean Expressions](Boolean Logic#boolean-expressions)
+    - [Boolean Laws](Boolean Logic#boolean-laws)
+      - [DeMorgan's Laws](Boolean Logic#demorgans-laws)
 - Logic Gates
-    - AND Gate
-    - OR Gate
-    - NOT Gate
-    - NAND Gate
-    - NOR Gate
-    - XOR Gate
-    - XNOR Gate
+    - [NOT gate](Boolean Logic#not-gate)
+    - [OR gate](Boolean Logic#or-gate)
+    - [NOR gate](Boolean Logic#nor-gate)
+    - [AND gate](Boolean Logic#and-gate)
+    - [NAND gate](Boolean Logic#nand-gate)
+    - [XOR gate](Boolean Logic#xor-gate)
+    - [XNOR gate](Boolean Logic#xnor-gate)
+    - [Imply gate](Boolean Logic#imply-gate)
+    - [Nimply gate](Boolean Logic#nimply-gate)
+
+- Bitwise Logic
 
 ---
 
@@ -46,6 +52,39 @@ Boolean algebra operates on these values using logical operators. The three basi
 
 With these operations combined we can make all sorts of complex expressions that make up a computer. Yes a computer is just a really complicated series of logic expression.
 One could argue that we as humans can also be represented by an even more complicated series of expresions
+
+## Boolean Expressions
+
+Boolean expressions are formed by combining Boolean values and logical operators. These expressions work like they would in basic math.  
+For example, the expression `True AND False` is a Boolean expression that evaluates to `False`.
+
+Boolean expressions can also include variables, which represent unknown Boolean values. For example, the expression `x AND y` is a Boolean expression that includes the variables `x` and `y`.
+
+## Boolean Laws
+
+There are several laws that hold for all Boolean expressions, regardless of the values of the variables. These laws can be used to simplify Boolean expressions by replacing them with equivalent expressions.
+
+Here are a few examples of Boolean laws:
+
+- `AND` and `OR` are associative, meaning that the order in which the operands are grouped does not affect the result. For example, `(x AND y) AND z` is equivalent to `x AND (y AND z)`.
+- The `NOT` operator is distributive over `AND` and `OR`. For example, `NOT (x AND y)` is equivalent to `(NOT x) OR (NOT y)`.
+- The `AND` operator has higher precedence than the `OR` operator, meaning that `AND` is evaluated before `OR`. For example, `x AND y OR z` is equivalent to `(x AND y) OR z`.
+
+### DeMorgan's laws
+DeMorgan's laws state that the complement of the union of two sets is equal to the intersection of their complements, and the complement of the intersection of two sets is equal to the union of their complements. This can also be written as:
+
+- (A U B)' = A' ∩ B'
+- (A ∩ B)' = A' U B'
+
+where A and B are sets, and ' denotes the complement of a set.
+
+In terms of Boolean algebra, DeMorgan's laws state that:
+- NOT(A OR B) = NOT A AND NOT B
+- NOT(A AND B) = NOT A OR NOT B
+
+These laws provide a way to simplify logical expressions by swapping conjunction for disjunction or vice versa.
+
+---
 
 ## Logic Gates
 
@@ -81,6 +120,12 @@ The XOR (exclusive OR) gate produces an output of `1` if its inputs are differen
 ### XNOR Gate
 
 The XNOR (exclusive NOR) gate is the opposite of the XOR gate. It produces an output of `1` if its inputs are the same, and `0` otherwise.
+
+### Imply Gate
+The implies gate (->) is a conditional logical operator that outputs a `1` if the input on the left is `0` or if the inputs on the left and right are the same and a `0` if the input on the left is `1` and the input on the right is `0`.
+
+### Nimply Gate
+The not implies gate (<-) is the opposite of the implies gate. It outputs a `0` if the input on the left is `0` or if the inputs on the left and right are the same, and a `1` if the input on the left is `1` and the input on the right is `0`.
 
 ## Bitwise Logic
 
@@ -129,7 +174,7 @@ The result of the NOT operation is the value `2`.
 
 ### Shift Operators (<<, >>)
 
-The shift operators (<< and >>) perform a bitwise shift of a value to the left or right. The left shift operator (<<) shifts the bits of a value to the left by the specified number of places, padding the right side with zeros. The right shift operator (>>) shifts the bits of a value to the right by the specified number of places, discarding the shifted bits.
+The shift operators represented by `<<` `>>` dont have equivalent operations in boolean logic. Instead of performing a logical operation, they perform a bitwise shift of a value to the left or right, which means moving the binary representation of a number a certain number of bits to left/right. The left shift operator (<<) shifts the bits of a value to the left by the specified number of places, padding the right side with zeros. The right shift operator (>>) shifts the bits of a value to the right by the specified number of places, discarding the shifted bits.
 
 For example, the expression `5 << 2` shifts the binary representation of the value `5` to the left by two places, as shown below:
 
@@ -142,6 +187,11 @@ For example, the expression `20 >> 2` shifts the binary representation of the va
 ```10100 >> 2 = 101```
 
 The result of the right shift operation is the value `5`.
+
+The shift operation is of extreme importance because it's simple to perform, but it can really impact the kind of algorithms it can be used for.  
+Look at this analogy in decimal. When asked the value of any number multiplied by 10, we can know instantly its result because it's just shifting our value! Tha same applies to dividing by 10, because it's just shifting the other way.
+In binary the same applies, but 10 in binary is 2 so the trick works when multiplying by 2 or dividing by 2.  
+By shifting by a certain amount you are actually multiplying or dividing by 2 the number of places you shift. So left shift by 3 places it's actually multiplying by 8. (You can go back to the previous examples and understand that this is the case)
 
 ---
 
