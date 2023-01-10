@@ -21,6 +21,6 @@ Topics to be covered in this lesson:
 
 This lesson is over, however here is a list of topics recommended learning next:
 
-- [Binary Negation](Binary Negation#binary-negation)
-- [Adders](Adders#adders)
+- [Binary Negation](Binary%20Negation.md#binary-negation)
+- [Adders](Adders.md#adders)
 

@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-- [Nothing](Boolean Logic#boolean-logic)
+- [Nothing](Boolean%20Logic.md#boolean-logic)
 
 ---
 
@@ -13,23 +13,23 @@
 This Lesson is split into 3 sections (to avoid a lot of redundancy), each one with its own sub topics.  
 Topics to be covered in this lesson:
 
-- Boolean Algebra
-    - [Basic Definitions](Boolean Logic#basic-definitions)
-    - [Boolean Expressions](Boolean Logic#boolean-expressions)
-    - [Boolean Laws](Boolean Logic#boolean-laws)
-      - [DeMorgan's Laws](Boolean Logic#demorgans-laws)
-- Logic Gates
-    - [NOT gate](Boolean Logic#not-gate)
-    - [OR gate](Boolean Logic#or-gate)
-    - [NOR gate](Boolean Logic#nor-gate)
-    - [AND gate](Boolean Logic#and-gate)
-    - [NAND gate](Boolean Logic#nand-gate)
-    - [XOR gate](Boolean Logic#xor-gate)
-    - [XNOR gate](Boolean Logic#xnor-gate)
-    - [Imply gate](Boolean Logic#imply-gate)
-    - [Nimply gate](Boolean Logic#nimply-gate)
-
-- Bitwise Logic
+- [Boolean Algebra](Boolean%20Logic.md#boolean-algebra)
+    - [Basic Definitions](Boolean%20Logic.md#basic-definitions)
+    - [Boolean Expressions](Boolean%20Logic.md#boolean-expressions)
+    - [Boolean Laws](Boolean%20Logic.md#boolean-laws)
+      - [DeMorgan's Laws](Boolean%20Logic.md#demorgans-laws)
+- [Logic Gates](Boolean%20Logic.md#logic-gates)
+    - [NOT gate](Boolean%20Logic.md#not-gate)
+    - [OR gate](Boolean%20Logic.md#or-gate)
+    - [NOR gate](Boolean%20Logic.md#nor-gate)
+    - [AND gate](Boolean%20Logic.md#and-gate)
+    - [NAND gate](Boolean%20Logic.md#nand-gate)
+    - [XOR gate](Boolean%20Logic.md#xor-gate)
+    - [XNOR gate](Boolean%20Logic.md#xnor-gate)
+    - [Imply gate](Boolean%20Logic.md#imply-gate)
+    - [Nimply gate](Boolean%20Logic.md#nimply-gate)
+- [Bitwise Logic](Boolean%20Logic.md#bitwise-logic)
+    - [Shift Operators](Boolean%20Logic.md#shift-operators--)
 
 ---
 
@@ -199,4 +199,4 @@ By shifting by a certain amount you are actually multiplying or dividing by 2 th
 
 This lesson is over, however here is a list of topics recommended learning next:
 
-- [Binary addition](Binary Addition#binary-addition)
+- [Binary addition](Binary%20Addition.md#binary-addition)

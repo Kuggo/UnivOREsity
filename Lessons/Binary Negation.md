@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-- [Binary](binary#binary)
+- [Binary](Binary.md#binary)
 
 ---
 
@@ -21,6 +21,6 @@ Topics to be covered in this lesson:
 
 This lesson is over, however here is a list of topics recommended learning next:
 
-- [Binary Subtraction](Binary Subtraction#binary-subtraction)
+- [Binary Subtraction](Binary%20Subtraction.md#binary-subtraction)
 - [Subtractors](Adders#adders)
 

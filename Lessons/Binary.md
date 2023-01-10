@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-- [Nothing](binary#binary)
+- [Nothing](Binary.md#binary)
 
 ---
 
@@ -80,4 +80,4 @@ The representation of 1 is ``0b0001``, so we join our representations, and we ge
 
 This lesson is over, however here is a list of topics recommended learning next:
 
-- [Binary addition](Binary Addition#binary-addition)
+- [Binary addition](Binary%20Addition.md#binary-addition)
