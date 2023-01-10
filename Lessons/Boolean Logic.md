@@ -17,6 +17,9 @@ Topics to be covered in this lesson:
     - [Basic Definitions](Boolean%20Logic.md#basic-definitions)
     - [Boolean Expressions](Boolean%20Logic.md#boolean-expressions)
     - [Boolean Laws](Boolean%20Logic.md#boolean-laws)
+      - [Idempotent Law](Boolean%20Logic.md#idempotent-law)
+      - [Absorvent and Neutral Elements](Boolean%20Logic.md#absorvent-and-neutral-elements)
+      - [Association and Distribuition](Boolean%20Logic.md#association-and-distribuition)
       - [DeMorgan's Laws](Boolean%20Logic.md#demorgans-laws)
 - [Logic Gates](Boolean%20Logic.md#logic-gates)
     - [NOT gate](Boolean%20Logic.md#not-gate)
@@ -64,12 +67,32 @@ Boolean expressions can also include variables, which represent unknown Boolean 
 
 There are several laws that hold for all Boolean expressions, regardless of the values of the variables. These laws can be used to simplify Boolean expressions by replacing them with equivalent expressions.
 
-Here are a few examples of Boolean laws:
+The simplest law is called double inversion. Having the `NOT` operator applied to another `NOT` operator is the same as not having them. For example, `NOT(NOT X)` is equivalent to `X`.
 
-- `AND` and `OR` are associative, meaning that the order in which the operands are grouped does not affect the result. For example, `(x AND y) AND z` is equivalent to `x AND (y AND z)`.
-- The `NOT` operator is distributive over `AND` and `OR`. For example, `NOT (x AND y)` is equivalent to `(NOT x) OR (NOT y)`.
-- The `AND` operator has higher precedence than the `OR` operator, meaning that `AND` is evaluated before `OR`. For example, `x AND y OR z` is equivalent to `(x AND y) OR z`.
-- Having the `NOT` operator applied to another `NOT` operator is the same as not having them. This is called double negation. For example, `NOT(NOT X)` is equivalent to `X`.
+### Association and Distribuition
+
+- `AND` and `OR` are associative, meaning that the order in which the operands are grouped does not affect the result.  
+For example, `(x AND y) AND z` is equivalent to `x AND (y AND z)`.
+- The `NOT` operator is distributive over `AND` and `OR`.  
+For example, `NOT (x AND y)` is equivalent to `(NOT x) OR (NOT y)`.
+- The `AND` operator has higher precedence than the `OR` operator, meaning that `AND` is evaluated before `OR`.  
+For example, `x AND y OR z` is equivalent to `(x AND y) OR z`.
+
+### Idempotent law
+
+This law states that doing an operation with the same element will result in the same element.
+- `X AND X` is equivalent to `X`
+- `X OR X` is equivalent to `X`
+
+### Absorvent and Neutral Elements
+
+The absorvent element is an element that when operated with will absorve the result to be itself (independent of what the other input is).  
+The absorvent element of AND operation is `0`. For example, `X AND 0` is equivalent to `0`.
+The absorvent element of OR operation is `1`. For example, `X OR 1` is equivalent to `1`.
+
+The neutral element is an element that when operated with will not interfear with the result (result will be the other input).  
+The neutral element of AND operation is `1`. For example, `X AND 1` is equivalent to `X`.
+The neutral element of OR operation is `0`. For example, `X OR 0` is equivalent to `X`.
 
 ### DeMorgan's laws
 
@@ -117,10 +140,11 @@ The XOR (exclusive OR) gate produces an output of `1` if its inputs are differen
 The XNOR (exclusive NOR) gate is the opposite of the XOR gate. It produces an output of `1` if its inputs are the same, and `0` otherwise.
 
 ### Imply Gate
-The implies gate (->) is a conditional logical operator that outputs a `1` if the input on the left is `0` or if the inputs on the left and right are the same and a `0` if the input on the left is `1` and the input on the right is `0`.
+The imply gate (->) is a conditional logical operator that outputs a `1` if the input on the left is `0` or if the inputs on the left and right are the same and a `0` if the input on the left is `1` and the input on the right is `0`.  
+`A -> B` is equivalent to `NOT(A) OR B`
 
 ### Nimply Gate
-The not implies gate (<-) is the opposite of the implies gate. It outputs a `0` if the input on the left is `0` or if the inputs on the left and right are the same, and a `1` if the input on the left is `1` and the input on the right is `0`.
+The nimply gate is the opposite of the imply gate. It outputs a `0` if the input on the left is `0` or if the inputs on the left and right are the same, and a `1` if the input on the left is `1` and the input on the right is `0`.
 
 ## Bitwise Logic
 
