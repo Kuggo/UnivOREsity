@@ -44,9 +44,9 @@ In Boolean algebra, there are only two values: `True` and `False`. These values 
 Boolean algebra operates on these values using logical operators. The three basic logical operators are:
 
 - `AND`: The AND operator returns `True` if both operands are `True`, and `False` otherwise. It is represented by the symbol `&` or the word `AND`.  
-  Traditionally it can also be represented as `+` (note that + doesn't mean addition of two numbers)
-- `OR`: The OR operator returns `True` if either operand is `True`, and `False` otherwise. It is represented by the symbol `|` or the word `OR`.  
   Traditionally it can also be represented as `x` or `*` (note that * doesn't mean multiplication of two numbers)
+- `OR`: The OR operator returns `True` if either operand is `True`, and `False` otherwise. It is represented by the symbol `|` or the word `OR`.  
+  Traditionally it can also be represented as `+` (note that + doesn't mean addition of two numbers)
 - `NOT`: The NOT operator returns the opposite of its operand. If the operand is `True`, it returns `False`. If the operand is `False`, it returns `True`. It is represented by the symbol `!` or the word `NOT`.  
   Traditionally it can also be represented as `-` or `~` (note that - doesn't mean the negation of the number)
 
