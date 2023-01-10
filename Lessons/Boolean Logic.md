@@ -69,14 +69,9 @@ Here are a few examples of Boolean laws:
 - `AND` and `OR` are associative, meaning that the order in which the operands are grouped does not affect the result. For example, `(x AND y) AND z` is equivalent to `x AND (y AND z)`.
 - The `NOT` operator is distributive over `AND` and `OR`. For example, `NOT (x AND y)` is equivalent to `(NOT x) OR (NOT y)`.
 - The `AND` operator has higher precedence than the `OR` operator, meaning that `AND` is evaluated before `OR`. For example, `x AND y OR z` is equivalent to `(x AND y) OR z`.
+- Having the `NOT` operator applied to another `NOT` operator is the same as not having them. This is called double negation. For example, `NOT(NOT X)` is equivalent to `X`.
 
 ### DeMorgan's laws
-DeMorgan's laws state that the complement of the union of two sets is equal to the intersection of their complements, and the complement of the intersection of two sets is equal to the union of their complements. This can also be written as:
-
-- (A U B)' = A' ∩ B'
-- (A ∩ B)' = A' U B'
-
-where A and B are sets, and ' denotes the complement of a set.
 
 In terms of Boolean algebra, DeMorgan's laws state that:
 - NOT(A OR B) = NOT A AND NOT B
