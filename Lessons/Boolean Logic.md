@@ -109,42 +109,163 @@ These laws provide a way to simplify logical expressions by swapping conjunction
 Logic gates are the base of all circuits. They are the simplest form of logic, and each performs one logic operation.  
 We use logic operations every day unconsciously. The names of those operations are the words we use in our speech.  
 As long as you can do that logic operation using a circuit (doesn't have to use electricity) you have a logic gate, and you can build anything you would otherwise be able to with conventional circuits.
-There are a bit more logic gates than the classical boolean operators meantioned above, but they are not required and can be replaced with combinations of those boolean operators. We however still include those to simplify our system.
+There are a bit more logic gates than the classical boolean operators meantioned above, but they are not required and can be replaced with combinations of those boolean operators. We however still include those to simplify our system.  
+We use their visual representation when making schematics of our circuits. Schematics are a very visual way to see the logic of a circuit, when compared to a boolean algebra expression.
 
 ### NOT Gate
 
 The NOT gate produces an output of `1` if the input is `0`, and `0` otherwise.
 
+Here is the Truth table for NOT Gate:
+
+
+|  A  | NOT A |
+|:---:|:-----:|
+|  0  |   1   |
+|  1  |   0   |
+
+
+
+Here is how NOT gate is represented in schematics.
+
+![Not gate Schematic](../logic%20gate%20schems/NOT.png)
+
 ### OR Gate
 
-The NOR gate produces an output of `1` only if both of its inputs are `0`, and `0` otherwise.
+The OR gate produces an output of `1` only if either of its inputs are `1`, and `0` otherwise.
+
+Here is the Truth table for OR Gate:
+
+|  A  |  B  | A OR B |
+|:---:|:---:|:------:|
+|  0  |  0  |   0    |
+|  0  |  1  |   1    |
+|  1  |  0  |   1    |
+|  1  |  1  |   1    |
+
+
+Here is how OR gate is represented in schematics.
+
+![OR gate Schematic](../logic%20gate%20schems/OR.png)
 
 ### NOR Gate
 
 The NOR gate is a combination of the OR and NOT gates. It produces an output of `1` only if both of its inputs are `0`, and `0` otherwise.
 
+Here is the Truth table for NOR Gate:
+
+|  A  |  B  | A NOR B |
+|:---:|:---:|:-------:|
+|  0  |  0  |    1    |
+|  0  |  1  |    0    |
+|  1  |  0  |    0    |
+|  1  |  1  |    0    |
+
+Here is how NOR gate is represented in schematics.
+
+![Nor gate Schematic](../logic%20gate%20schems/NOR.png)
+
 ### AND Gate
 
 The AND gate produces an output of `1` if any of its inputs are `0`, and `0` otherwise.
+
+Here is the Truth table for AND Gate:
+
+|  A  |  B  | A AND B |
+|:---:|:---:|:-------:|
+|  0  |  0  |    0    |
+|  0  |  1  |    0    |
+|  1  |  0  |    0    |
+|  1  |  1  |    1    |
+
+Here is how AND gate is represented in schematics.
+
+![AND gate Schematic](../logic%20gate%20schems/AND.png)
 
 ### NAND Gate
 
 The NAND gate is a combination of the AND and NOT gates. It produces an output of `1` if any of its inputs are `0`, and `0` otherwise.
 
+Here is the Truth table for NAND Gate:
+
+|  A  |  B  | A NAND B |
+|:---:|:---:|:--------:|
+|  0  |  0  |    1     |
+|  0  |  1  |    1     |
+|  1  |  0  |    1     |
+|  1  |  1  |    0     |
+
+Here is how NAND gate is represented in schematics.
+
+![NAND gate Schematic](../logic%20gate%20schems/NAND.png)
+
 ### XOR Gate
 
 The XOR (exclusive OR) gate produces an output of `1` if its inputs are different, and `0` otherwise.
+
+Here is the Truth table for XOR Gate:
+
+|  A  |  B  | A XOR B |
+|:---:|:---:|:-------:|
+|  0  |  0  |    0    |
+|  0  |  1  |    1    |
+|  1  |  0  |    1    |
+|  1  |  1  |    0    |
+
+Here is how XOR gate is represented in schematics.
+
+![XOR gate Schematic](../logic%20gate%20schems/XOR.png)
 
 ### XNOR Gate
 
 The XNOR (exclusive NOR) gate is the opposite of the XOR gate. It produces an output of `1` if its inputs are the same, and `0` otherwise.
 
+Here is the Truth table for XNOR Gate:
+
+|  A  |  B  | A XNOR B |
+|:---:|:---:|:--------:|
+|  0  |  0  |    1     |
+|  0  |  1  |    0     |
+|  1  |  0  |    0     |
+|  1  |  1  |    1     |
+
+Here is how XNOR gate is represented in schematics.
+
+![XNOR gate Schematic](../logic%20gate%20schems/XNOR.png)
+
 ### Imply Gate
 The imply gate (->) is a conditional logical operator that outputs a `1` if the input on the left is `0` or if the inputs on the left and right are the same and a `0` if the input on the left is `1` and the input on the right is `0`.  
 `A -> B` is equivalent to `NOT(A) OR B`
 
+Here is the Truth table for Imply Gate:
+
+|  A  |  B  | A IMPLY B |
+|:---:|:---:|:---------:|
+|  0  |  0  |     1     |
+|  0  |  1  |     1     |
+|  1  |  0  |     0     |
+|  1  |  1  |     1     |
+
+Here is how imply gate is represented in schematics.
+
+![Imply gate Schematic](../logic%20gate%20schems/IMPLY.png)
+
 ### Nimply Gate
+
 The nimply gate is the opposite of the imply gate. It outputs a `0` if the input on the left is `0` or if the inputs on the left and right are the same, and a `1` if the input on the left is `1` and the input on the right is `0`.
+
+Here is the Truth table for Nimply Gate:
+
+|  A  |  B  | A NIMPLY B |
+|:---:|:---:|:----------:|
+|  0  |  0  |     0      |
+|  0  |  1  |     0      |
+|  1  |  0  |     1      |
+|  1  |  1  |     0      |
+
+Here is how Nimply gate is represented in schematics.
+
+![Nimply gate Schematic](../logic%20gate%20schems/NIMPLY.png)
 
 ## Bitwise Logic
 
