@@ -12,9 +12,11 @@
 
 Topics to be covered in this lesson:
 
-- Addition in decimal
-- Carry and Sum
-- Addition using RCA algorithm
+- [Addition in decimal](Binary%20Addition.md#addition-in-decimal)
+- [Carry and Sum](Binary%20Addition.md#carry-and-sum)
+- [Addition using RCA algorithm](Binary%20Addition.md#addition-using-the-rca-algorithm)
+- [Half Addition](Binary%20Addition.md#half-addition)
+- [Full Addition](Binary%20Addition.md#full-addition)
 
 ---
 
@@ -50,7 +52,7 @@ With all of this in mind we can finally take a look at how we can add 2 multi di
 RCA stands for ripple carry adder, a circuit that adds numbers. The algorithm we just saw, is what the circuit does, hence calling it ripple carry addition algorithm.   
 Let's apply those same rules on the example ``365 + 437``:
 
-![Decimal Addition Step by Step](..\gifs\Addition_decimal1.gif)
+![Decimal Addition Step by Step](../gifs/Addition_decimal1.gif)
  
 
 ## Binary Addition
@@ -81,7 +83,7 @@ Note that The first carry is always zero because there are no previous digits.
 
 Here is how that algorithm can be applied in the following addition: ``5 + 3``, or in binary ``0b0101 + 0b0011``
 
-![Binary Addition Step by Step](..\gifs\Addition_binary.gif)
+![Binary Addition Step by Step](../gifs/Addition_binary.gif)
 
 ---
 ## What Now?
