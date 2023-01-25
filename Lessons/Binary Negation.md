@@ -38,11 +38,11 @@ For an N bit number, one can obatin its negative form by inverting 1s to 0s, and
 Example: ``-5 = ~0b0101 = 0b1010``  
 You might think that there is a problem. ``0b1010`` is the representation for 10! How can we tell if that is a -5 or a 10??
 The answer might surprise you with how simple it is: There is no such conflict. Allow me to clarify:  
-N bits can represent $$2^N$$ diferent combinations. In unsigned integers that is the range: $$ \left] 0, 2^N-1 \right[ $$.  
+N bits can represent 2<sup>N</sup> diferent combinations. In unsigned integers that is the range: [ 0 , 2<sup>N-1</sup> ].  
 Since we are using the same number of bits, we cannot keep the same number of positive values if we want to represent negatives. We should have equally many negative and positive numbers. So we will use our upper half of combinations available to represent negative numbers.
-The positive numbers will go from $$ \left] 0, 2^{N-1} - 1 \right[ $$.  
-The negative numbers will be using the range $$ \left] 2^{N-1}, 2^N - 1 \right[ $$ to represent the negative numbers in the range $$ \left] -(2^{N-1} - 1), -0 \right[ $$.  
-That means the whole range of 1s complement is $$ \left] -(2^{N-1} - 1), 2^{N-1} - 1 \right[ $$.
+The positive numbers will go from [ 0 , 2<sup>N-1</sup> - 1 ].  
+The negative numbers will be using the range [ 2<sup>N-1</sup> , 2<sup>N</sup> - 1 ] to represent the negative numbers in the range [ -(2<sup>N-1</sup> - 1) , - 0 ].  
+That means the whole range of 1s complement is [ -(2<sup>N-1</sup> - 1) , 2<sup>N-1</sup> - 1 ].
 To help you visually understand the concept here is an example with how it will work 4 bits:  
 ``0000`` -> 0  
 ``0001`` -> 1  
@@ -73,7 +73,7 @@ Example: ``7 + -6`` or ``0b0111 + 0b1001`` is equal to ``0b0000``. Because 0 is 
 2s Complement is an alternative to 1s complement, that fixes all problems related to it.  
 Essencially all the problems described above come from the fact that we have a -0 between -1 and 0. So how can we remove it?  
 Instead of going from -0 to -7 we can move that range to -1 to -8 (specifically in 4 bits).
-Let's take a look at the representations of 2s complement:
+Let's take a look at the representations of 2s complement:  
 ``0000`` -> 0  
 ``0001`` -> 1  
 ``0010`` -> 2  
@@ -97,7 +97,7 @@ Lets look at a final example of it being used to add 2 numbers in 2s complement 
 ``5 + -3`` or ``0b0101 + ~0b0011 + 1 = 0b0101 + 0b1100 + 1 = 0b0101 + 0b1101 = 0b0010`` which is 2 as expected  
 ``3 + -5`` or ``0b0011 + ~0b0101 + 1 = 0b0011 + 0b1010 + 1 = 0b0011 + 0b1101 = 0b1110`` which is -2 as expected
 
-The range for 2s complement is $$ \left] -2^{N-1}, 2^{N-1} -1 \right[ $$.
+The range for 2s complement is [ - 2<sup>N-1</sup> , 2<sup>N-1</sup> - 1 ].
 
 ---
 ## What Now?
