@@ -55,7 +55,7 @@ Let's apply those same rules on the example ``365 + 437``:
 ![Decimal Addition Step by Step](../gifs/Addition_decimal1.gif)
  
 
-## Binary Addition
+## Adding in Binary
 
 ### Half Addition
 
