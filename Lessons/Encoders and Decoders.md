@@ -47,7 +47,7 @@ Let's use a table to make visualizing what conections are done easily.
 We can now see that 0 is not connected to anything (the default value of an unmodified bit is 0), while 3 is connected to every bit.  
 I will also take the time to show a schematic of the encoder presented above:
 
-![2-bit encoder](../Images/2b encoder.png)
+![2-bit encoder](../Images/2b%20encoder.png)
 
 Now the remaining question is how to make an encoder for any bit length? That can be done by repeating the pattern we have been using:  
 We take the input we want our encoder to encode to, and connect it so that the correct bits turn on in the output. If we wish that the bit turns on, we connect our input to that bit, if not we skip that bit and do this until all bits were checked.
@@ -76,7 +76,7 @@ We can look at a table showing when we invert the inputs for the NOR gate (❌ m
 
 Here is the schematic for a single decoder for the number 13 (0b1101):
 
-![Schematic of a 4-bit decoder for the number 13](../Images/4b 13 decoder.png)
+![Schematic of a 4-bit decoder for the number 13](../Images/4b%2013%20decoder.png)
 
 
 ---
