@@ -7,6 +7,7 @@
 - [Binary](Binary.md#binary)
 - [Binary Addition](Binary%20Addition.md#binary-addition)
 - [Binary Negation](Binary%20Negation.md#binary-negation)
+- [Boolean Logic](Boolean%20Logic.md#boolean-logic)
 
 ---
 
