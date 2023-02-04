@@ -22,7 +22,7 @@ Topics to be covered in this lesson:
 
 ## Addition in Decimal
 
-Before explaining How addition works in binary we should first get familiar with the algorithm we use.
+Before explaining how addition works in binary we should first get familiar with the algorithm we use.
 It's likely that one learned this in first grade and does this automatically, but we will do a quick revision:  
 When adding 2 numbers with several decimal places we don't do the whole addition at once. 
 We first start from the LSD (Least Significant digit) and work our way to the MSD (Most Significant Digit).  

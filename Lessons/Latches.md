@@ -20,7 +20,7 @@ Topics to be covered in this lesson:
 
 ## Introduction
 
-state machines? Combinational vs sequential? Latches are memory cells that depend on the use case and its behaviour
+State machines? Combinational vs sequential? Latches are memory cells that depend on the use case and its behaviour
 
 ## RS Nor Latch
 
