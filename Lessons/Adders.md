@@ -29,7 +29,9 @@ Topics to be covered in this lesson:
 
 ## Ripple Carry Adder (RCA)
 
-TODO
+
+
+[//]: # (TODO)
 
 ## Instant Carry Adder (ICA)
 
