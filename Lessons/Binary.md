@@ -23,8 +23,10 @@ Topics to be covered in this lesson:
 
 ## Why use Binary?
 
-Binary is a system of representing numbers using only two symbols: 0 and 1. These symbols are often called "bits". The reason for using only 2 digits is that hardware can only have two states, 'on' and 'off'.  
-When talking about numbers in different bases, we must have a way to distinguish between which base we are representing that number with. So to fix that problem, we prefix ``0b`` when the number is in binary and ``0d`` when its in decimal. Other bases like hexadecimal and octal use ``0x`` and ``0o`` respectively.  
+Binary is a system of representing numbers using only two symbols: 0 and 1. These symbols are often called "bits". 
+The reason for using only 2 digits is that hardware can only have two states, 'on' and 'off'.  
+When talking about numbers in different bases, we must have a way to distinguish between which base we are representing that number with. 
+So to fix that problem, we prefix ``0b`` when the number is in binary and ``0d`` when its in decimal. Other bases like hexadecimal and octal use ``0x`` and ``0o`` respectively.  
 Here are the prefixes being used to distinguish which number we mean:  
 ``0b101 = 5 (five)``  
 ``0o101 = 65 (sixty five)``  
@@ -33,7 +35,8 @@ Here are the prefixes being used to distinguish which number we mean:
 
 ## How does it work?
 
-In a binary system, each digit represents a power of 2, that means each digit doubles its value when going to the left. The rightmost digit represents 1 (2^0), the next digit to the left represents 2 (2^1), and so on.  
+In a binary system, each digit represents a power of 2, that means each digit doubles its value when going to the left. 
+The rightmost digit represents 1 (2<sup>0</sup>), the next digit to the left represents 2 (2<sup>1</sup>), and so on.  
 For example, the binary number 101 represents the decimal number ``1*2^2 + 0*2^1 + 1*2^0 = 1*4 + 0*2 + 1*1 = 4 + 1 = 5``.
 
 ## Translating from decimal to binary
@@ -61,9 +64,9 @@ The final binary representation is 1010.
 
 ## How many numbers can be represented with binary?
 
-The number of unique numbers that can be represented with a certain number of bits is 2^n, where n is the number of bits.  
-For example, using 4 bits, allows you to represent 2^4 = 16 unique combination of numbers. The minimum is the number that corresponds to the binary representation of having just zeros in the number, and the maximum is just having ones in the representation of the number.  
-The minimum number we can represent is 0, and the maximum we can represent will be ``(2^n) - 1``  
+The number of unique numbers that can be represented with a certain number of bits is 2<sup>N</sup>, where N is the number of bits.  
+For example, using 4 bits, allows you to represent 2<sup>4</sup> = 16 unique combination of numbers. The minimum is the number that corresponds to the binary representation of having just zeros in the number, and the maximum is just having ones in the representation of the number.  
+The minimum number we can represent is 0, and the maximum we can represent will be 2<sup>N</sup> - 1  
 For example: using 4 bits the minimum we have is 0 and the max is 16-1 which is 15
 
 ## How does this apply to other bases?

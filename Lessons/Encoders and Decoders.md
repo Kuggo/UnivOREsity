@@ -85,4 +85,4 @@ Here is the schematic for a single decoder for the number 13 (0b1101):
 This lesson is over, however here is a list of topics recommended learning next:
 
 - [ROM]()
-
+- [ALU](ALU.md#alu)
