@@ -36,11 +36,11 @@ The control signals work like a decoder that decodes which output should be sele
 The diagram below shows how a 2-to-1 multiplexer with the control signal C, and 2 data inputs (I<sub>0</sub>, I<sub>1</sub>), 
 and a single output (O) is generally represented in schematics.
 
-![2-to-1 Multiplexer]()
+![2-to-1 Multiplexer](../Images/mux.png)
 
 And here is how it can be done using logic gates. For multiplexers with more inputs the schematic is similar.
 
-![2-to-1 Multiplexer with Logic gates]()
+![2-to-1 Multiplexer with Logic gates](../Images/demux%20impl.png)
 
 In this example, when the control signal C is 0, the input I<sub>0</sub> is selected and its data goes to the output.
 Similary, when C is 1, the input I<sub>1</sub> is selected and its data goes to the output.
@@ -54,13 +54,11 @@ It takes a single input and distributes it to one of several possible outputs ba
 
 The diagram below shows a 1-to-2 demultiplexer with the control signal C, a single data input I, and 2 outputs (O<sub>0</sub>, O<sub>1</sub>).
 
-![1-to-2 Demultiplexer]()
-
-[//]: # (TODO put diagrams of these 4 images)
+![1-to-2 Demultiplexer](../Images/demux.png)
 
 And here is how it can be done using logic gates. For demultiplexers with more inputs the schematic is similar.
 
-![2-to-1 Multiplexer with Logic gates]()
+![2-to-1 Multiplexer with Logic gates](../Images/demux%20impl.png)
 
 In this example, when the control signal C is 0, the output O<sub>0</sub> is selected and the input data goes to that output.
 Similary, when C is 1, the output O<sub>1</sub> is selected and input data goes to that output.
