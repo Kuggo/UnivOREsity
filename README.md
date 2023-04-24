@@ -25,7 +25,25 @@ If you would like to take a look at an interactive version, go [here](https://vi
 
 [//]: # (TODO add interactive embed here) 
 
+### How do I interpret the diagram?
 
+The diagram colors, lines and boxes all have meaning. here is a list of things to know when interpreting it:
+- Start means that no prerequisite should be needed to take that topic.
+- Colors mean that topics are minimum requirements for certain ranks. Each color associated with the rank of that color:
+  - Green  -> Builder
+  - Orange -> Engineer
+  - Yellow -> TBA
+  - White  -> default (not attributed yet)
+- Each box holds a title, and most of them represent a lesson (tho mapping isn't 100% 1 box to 1 lesson), name of the lesson and box may not be the same.
+- Boxes with curved corners represent a sub category. You can ctrl+click on them to link to their own sub diagram.
+
+---
+
+## Contributing
+
+If you feel capable and would like to contribute to this project, you can submit a pr as long as the information provided is correct and follows the format.   
+If you are aiming to become a regular, then joining the [ORE](README.md#ore) and accessing the exclusive channels.  
+If you want to take it a step further and become an official teacher to teach students on the server, then contact us on the server.
 
 ---
 
