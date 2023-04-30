@@ -40,7 +40,7 @@ and a single output (O) is generally represented in schematics.
 
 And here is how it can be done using logic gates. For multiplexers with more inputs the schematic is similar.
 
-![2-to-1 Multiplexer with Logic gates](../Images/demux%20impl.png)
+![2-to-1 Multiplexer with Logic gates](../Images/Mux%20impl.png)
 
 In this example, when the control signal C is 0, the input I<sub>0</sub> is selected and its data goes to the output.
 Similary, when C is 1, the input I<sub>1</sub> is selected and its data goes to the output.
