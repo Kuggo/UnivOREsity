@@ -122,11 +122,11 @@ If f<sub>i</sub> is the approximation to the original function using linear inte
 - `u` is the upper LUT value
 - `x` is between [`l`, `u`]
 
-![](../Latex/li.png)
+![](../Latex/li_white.png)
 
 When applied to sin(x) we can rewrite this as:
 
-![](../Latex/li_sin.png)
+![](../Latex/li_sin_white.png)
 
 
 ## Key ideas to take away
